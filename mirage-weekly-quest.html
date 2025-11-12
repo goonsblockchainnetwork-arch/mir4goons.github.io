@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>GOONS | MIR4 DB</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body>
+        <div class="d-flex" id="wrapper">
+            <!-- Sidebar-->
+            <div class="border-end bg-white" id="sidebar-wrapper">
+                <div class="sidebar-heading border-bottom bg-light"><b>GOONS | MIR4 DB</b></div>
+                <div class="list-group list-group-flush">
+                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="index.html">Announcement</a>
+                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="mirage-weekly-quest.html"><b>Mirage Weekly Quest</b></a>
+                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">Expedition</a>
+                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">World Boss</a>
+                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">-</a>
+                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">About Us</a>
+                </div>
+            </div>
+            <!-- Page content wrapper-->
+            <div id="page-content-wrapper">
+                <!-- Top navigation-->
+                <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+                    <div class="container-fluid">
+                        <button class="btn btn-primary" id="sidebarToggle">=</button>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
+                                <li class="nav-item active"><a class="nav-link" href="#!">Home</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#!">Link</a></li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                                    <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                                        <a class="dropdown-item" href="#!">Action</a>
+                                        <a class="dropdown-item" href="#!">Another action</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item" href="#!">Something else here</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+                <!-- Page content-->
+                <div class="container-fluid">
+                    <h1 class="mt-4">Mirage Weekly Quest List</h1>
+                    <style>
+                        body {
+                            font-family: Arial, sans-serif;
+                            margin: 20px;
+                        }
+                        table {
+                            width: 100%;
+                            border-collapse: collapse;
+                            margin-top: 20px;
+                            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                        }
+                        th, td {
+                            border: 1px solid #ddd;
+                            padding: 12px 15px;
+                            text-align: left;
+                        }
+                        th {
+                            background-color: #f2f2f2;
+                            font-weight: bold;
+                            position: sticky;
+                            top: 0;
+                            z-index: 1;
+                        }
+                        tr:nth-child(even) {
+                            background-color: #f9f9f9;
+                        }
+                        tr:hover {
+                            background-color: #f5f5f5;
+                        }
+                        caption {
+                            font-size: 1.2em;
+                            font-weight: bold;
+                            margin-bottom: 10px;
+                        }
+                        /* Auto-sizing input/textarea */
+                        .cell-input {
+                            width: 100%;
+                            border: none;
+                            padding: 8px 10px;
+                            box-sizing: border-box;
+                            background: transparent;
+                            font: inherit;
+                            resize: none;
+                            overflow: hidden;
+                            min-height: 36px;
+                            line-height: 1.4;
+                        }
+                        .cell-input:focus {
+                            outline: 2px solid #4CAF50;
+                            background: white;
+                            z-index: 2;
+                            position: relative;
+                        }
+
+                        /* Hidden mirror for measuring text size */
+                        .sizer {
+                            position: absolute;
+                            top: -9999px;
+                            left: -9999px;
+                            visibility: hidden;
+                            white-space: pre-wrap;
+                            word-wrap: break-word;
+                            font: inherit;
+                            padding: 8px 10px;
+                            box-sizing: border-box;
+                        }
+                    </style>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Map</th>
+                                <th>Location</th>
+                                <th>Boss Name</th>
+                                <th>Asia Server Time</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><input type="text" class="cell-input" value="W1" readonly></td>
+                                <td><input type="text" class="cell-input" value="Demon Bull Temple 1F"></td>
+                                <td><input type="text" class="cell-input" value="Boltox"></td>
+                                <td><input type="text" class="cell-input" value="1:00 / 3:00 / 5:00 / 7:00 / 9:00 / 11:00"></td>
+                            </tr>
+                            <tr>
+                                <td><input type="text" class="cell-input" value="W1" readonly></td>
+                                <td><input type="text" class="cell-input" value="Bullface Forest"></td>
+                                <td><input type="text" class="cell-input" value="Mata"></td>
+                                <td><input type="text" class="cell-input" value="2:00 / 4:00 / 6:00 / 8:00 / 10:00 / 12:00"></td>
+                            </tr>
+                            <!-- Add more rows as needed -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
