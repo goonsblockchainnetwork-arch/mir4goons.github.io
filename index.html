@@ -281,9 +281,32 @@
             <li><a href="field-mission.html"><i class="fas fa-chart-bar"></i><span>Field Mission</span></a></li>
             <li><a href="purgatory-mission.html"><i class="fas fa-chart-bar"></i><span>Purgatory Mission</span></a></li>
             <li><a href="mirage-mission.html"><i class="fas fa-chart-bar"></i><span>Mirage Mission</span></a></li>
+            <li><a href="world-boss.html"><i class="fas fa-chart-bar"></i><span>World Boss</span></a></li>
             <li><a href="#"><i class="fas fa-users"></i><span>About Us</span></a></li>
-            <li><a href="#"><i class="fas fa-sign-out-alt"></i><span>Logout</span></a></li>
+            <li><a href="#"><i class="fas fa-sign-out-alt"></i><span>Visitors Count: </span><span class="website-counter"></a></li>
         </ul>
+<!-- <button id="reset" type="hidden">Reset Counter</button> -->
+<script>
+  var counterContainer = document.querySelector(".website-counter");
+  var resetButton = document.querySelector("#reset");
+  var visitCount = localStorage.getItem("page_view");
+
+  if (visitCount) {
+    visitCount = Number(visitCount) + 1;
+    localStorage.setItem("page_view", visitCount);
+  } else {
+    visitCount = 1;
+    localStorage.setItem("page_view", 1);
+  }
+
+  counterContainer.innerHTML = visitCount;
+
+  resetButton.addEventListener("click", () => {
+    visitCount = 1;
+    localStorage.setItem("page_view", 1);
+    counterContainer.innerHTML = visitCount;
+  });
+</script>
     </aside>
 
     <!-- Main Content -->
